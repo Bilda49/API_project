@@ -1,38 +1,91 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Josefin+Sans&family=Lilita+One&family=Montserrat:wght@400;700&family=Oswald:wght@400;700&family=Poppins&family=Press+Start+2P&display=swap");
+
+.img {
+  border-radius: 30px;
+  box-shadow: 15px 15px 15px rgba(28, 207, 28, 0.397);
+}
+.about {
+  margin-bottom: 50px;
+  background-color: rgba(0, 0, 0, 0.667);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+div p,
+h2,
+h1 {
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-image: linear-gradient(
+    to right,
+    rgb(71, 186, 235),
+    rgb(26, 169, 57)
+  );
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.aboutP {
+  padding-left: 30px;
+  padding-right: 15px;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-image: linear-gradient(
+    to right,
+    rgb(26, 169, 57),
+    rgb(71, 186, 235)
+  );
+  text-shadow: rgb(134, 159, 135) 10px 10px 7px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.mainDiv {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Climate Crisis", cursive;
+  font-family: "Josefin Sans", sans-serif;
+  font-family: "Lilita One", cursive;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Oswald", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-family: "Press Start 2P", cursive;
 }
 
-.App-link {
-  color: #61dafb;
+body {
+  background: url("https://i.gifer.com/ANFU.gif");
+  color: aliceblue;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.characterDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  flex-direction: column;
+}
+
+.buttons {
+  width: 300px;
+  height: 75px;
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background: linear-gradient(to right, rgb(26, 169, 57), rgb(71, 186, 235));
+  border: none;
+  border-radius: 15px;
+  box-shadow: 5px 5px 5px #44e7cb;
+}
+
+.buttons:hover {
+  width: 330px;
+}
+
+.buttons:active {
+  background-color: #3e8e41;
+  box-shadow: 15px 15px 15px #44e7cb;
+  transform: translateY(4px);
 }
